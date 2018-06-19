@@ -1,5 +1,5 @@
 {
     "scripts": {
-        "build": "add-at-the-end-of-your-build-process >>> workbox injectManifest sw-config.js"
+        "build": "your-build-process workbox injectManifest sw-config.js"
       }
 }
