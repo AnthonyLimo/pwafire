@@ -2,8 +2,7 @@
 module.exports = {
   "globDirectory": "build/", // The base directory you wish to match globPatterns against, 
   // relative to the current working directory.
-  "globPatterns": [ // Note: Setting globPatterns is often unnecessary when using the workbox-webpack-plugin,
-    // which will automatically precache files that are part of the webpack build pipeline by default.
+  "globPatterns": [ 
     "**/*.css",
     "index.html",
     "js/animation.js",
