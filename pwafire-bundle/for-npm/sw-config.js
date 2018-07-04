@@ -5,7 +5,6 @@
        // edit to add all file to cache; configure for your project below
        "**/*.css", // eg cache all css files, images etc in the root folder
        "index.html",
-       "js/animation.js",  
        "images/*.jpg"
        ],
        "swSrc": "src/service-worker.js", // The path and filename of the service worker file that will be created by the build process.
