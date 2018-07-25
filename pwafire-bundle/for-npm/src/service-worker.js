@@ -1,18 +1,11 @@
-// The importScripts call imports the workbox-sw.js
-// library from a Content Delivery Network (CDN).
-
-// Once the library is loaded, the workbox object gives our
-// service worker access to all the Workbox modules. 
-
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js');
+// authored by Maye Edwin : https://twitter.com/MayeEdwin1
+// Add offline properties, push notification, web share, web payments, etc
+// pwafire 4.0.0
+importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox-sw.js')
+  
 if (workbox) {
-console.log(`Yay! PWA Fire with Workbox is loaded 🎉`);
-
-// The precacheAndRoute method of the precaching module takes a precache
-// "manifest" (a list of file URLs with "revision hashes")
-// to cache on service worker installation. 
-
-workbox.precaching.precacheAndRoute([]);
- } else {
- console.log(`Oops! PWA Fire with Workbox didn't load 😬`);
- }
+    console.log(`Yay! Workbox is loaded ! Cheers to PWA Fire🎉`);
+    workbox.precaching.precacheAndRoute([]);
+} else {
+    console.log(`Oops! Workbox didn't load 😬`);
+}
